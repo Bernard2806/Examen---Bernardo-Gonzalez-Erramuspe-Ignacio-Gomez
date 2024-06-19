@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examen - Bernardo Gonzalez Erramuspe, Ignacio Gomez", "Examen - Bernardo Gonzalez Erramuspe, Ignacio Gomez\Examen - Bernardo Gonzalez Erramuspe, Ignacio Gomez.csproj", "{7E8EF6A6-2B16-409A-A6DD-ABD223FDDBE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E8EF6A6-2B16-409A-A6DD-ABD223FDDBE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8EF6A6-2B16-409A-A6DD-ABD223FDDBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8EF6A6-2B16-409A-A6DD-ABD223FDDBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8EF6A6-2B16-409A-A6DD-ABD223FDDBE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A104EE7E-1CC7-477B-883D-A100B2D90C09}
+	EndGlobalSection
+EndGlobal
