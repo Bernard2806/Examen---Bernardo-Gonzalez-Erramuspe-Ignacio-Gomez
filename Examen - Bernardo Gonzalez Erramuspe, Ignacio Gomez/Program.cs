@@ -98,10 +98,10 @@ namespace Examen___Bernardo_Gonzalez_Erramuspe__Ignacio_Gomez
             Console.Clear();
             Console.WriteLine("Ingresar el Codigo del Ejemplar:");
             ejemplar.Codigo = int.Parse(Console.ReadLine());
-            foreach (Prestamo pre in biblioteca.Prestamos) { 
-                if( ejemplar.Codigo == pre.CodigoEjemplar && pre.Devuelto == false)
+            foreach (Ejemplar ej in biblioteca.Ejemplares) { 
+                if( ejemplar.Codigo == ej.Codigo)
                 {
-                    Console.WriteLine("El ejemplar no esta disponible.");
+                    Console.WriteLine("El ejemplar ya existe.");
                     Console.ReadKey();
                     return;
                 }
@@ -117,6 +117,7 @@ namespace Examen___Bernardo_Gonzalez_Erramuspe__Ignacio_Gomez
         static DVD RegistrarDVD() {
             DVD dvd = new DVD();
             RegistrarEjemplar(dvd);
+            if (dvd.Titulo == null || dvd.Titulo == string.Empty) return null;
             Console.WriteLine("Ingrese la Duración del DVD:");
             dvd.Duracion = int.Parse(Console.ReadLine());
             return dvd;
@@ -125,6 +126,7 @@ namespace Examen___Bernardo_Gonzalez_Erramuspe__Ignacio_Gomez
         static Libro RegistrarLibro() {
             Libro libro = new Libro();
             RegistrarEjemplar(libro);
+            if (libro.Titulo == null || libro.Titulo == string.Empty) return null;
             Console.WriteLine("Ingrese el ISBN del Libro:");
             libro.ISBN = Console.ReadLine();
             Console.WriteLine("Ingrese el Año de la Publicacion:");
@@ -135,6 +137,7 @@ namespace Examen___Bernardo_Gonzalez_Erramuspe__Ignacio_Gomez
         static Revista RegistrarRevista() {
             Revista revista = new Revista();
             RegistrarEjemplar(revista);
+            if (revista.Titulo == null || revista.Titulo == string.Empty) return null;
             Console.WriteLine("Ingrese la Fecha de la Revista:");
             revista.Fecha = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el Numero de la Revista:");

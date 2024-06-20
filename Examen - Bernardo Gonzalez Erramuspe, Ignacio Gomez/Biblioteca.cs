@@ -14,6 +14,10 @@ namespace Examen___Bernardo_Gonzalez_Erramuspe__Ignacio_Gomez
 
 
         public void AniadirEjemplar(Ejemplar ejm) {
+            if(ejm == null || ejm.Titulo == null || ejm.Titulo == string.Empty)
+            {
+                return;
+            }
             Ejemplares.Add(ejm);
         }
         public void AniadirPrestamo(Prestamo pre)
